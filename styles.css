@@ -29,24 +29,110 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* Container Styles */
-.feature-container, .other-container {
+/* Workspace Container Styles */
+.workspace-container {
     background: #ffffff;
     border: 1px solid #d4d4d0;
     border-radius: 8px;
-    padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
-.feature-container h2, .other-container h2 {
+.workspace-header {
+    background: #f9f9f6;
+    border-bottom: 1px solid #e8e8e4;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workspace-header h2 {
     color: #3a3a3a;
     font-size: 1.4em;
     font-weight: 400;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e8e8e4;
+    margin: 0;
     letter-spacing: 0.5px;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    display: flex;
+    gap: 2px;
+    background: #f0f0ec;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.tab-btn {
+    background: transparent;
+    color: #6a6a66;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.tab-btn:hover {
+    background: rgba(138, 138, 134, 0.1);
+    color: #4a4a46;
+}
+
+.tab-btn.active {
+    background: #8a8a86;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Workspace Content */
+.workspace-content {
+    padding: 30px;
+    min-height: 300px;
+}
+
+.content-panel {
+    display: none;
+}
+
+.content-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Placeholder Content */
+.placeholder-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.placeholder-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.placeholder-content h3 {
+    color: #3a3a3a;
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.placeholder-content p {
+    color: #6a6a6a;
+    margin: 5px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
 }
 
 /* Feature Grid */
@@ -372,22 +458,34 @@ textarea:focus {
         font-size: 1.5em;
     }
     
-    .feature-container, .other-container {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .feature-grid, .other-grid {
-        grid-template-columns: 1fr;
+    .workspace-header {
+        flex-direction: column;
         gap: 15px;
-    }
-    
-    .feature-card, .other-card {
         padding: 20px;
+        text-align: center;
     }
     
-    .feature-icon, .other-icon {
-        font-size: 32px;
+    .toolbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+    
+    .workspace-content {
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .placeholder-content {
+        padding: 30px 15px;
+    }
+    
+    .placeholder-icon {
+        font-size: 36px;
     }
     
     .nav-header {
@@ -398,5 +496,14 @@ textarea:focus {
     
     .weather-section, .notes-section, .history-section {
         padding: 20px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .input-group button {
+        align-self: stretch;
     }
 }

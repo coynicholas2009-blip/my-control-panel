@@ -15,55 +15,120 @@
         
         <main>
             <!-- Main Features Container -->
-            <div class="feature-container">
-                <h2>Main Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-card" onclick="window.location.href='weather.html'">
-                        <div class="feature-icon">🌤️</div>
-                        <h3>Weather</h3>
-                        <p>Check weather for cities around the world</p>
-                        <button class="feature-btn">Open</button>
+            <div class="workspace-container">
+                <div class="workspace-header">
+                    <h2>Main Features</h2>
+                    <div class="toolbar">
+                        <button class="tab-btn active" onclick="showMainFeature('weather')">Weather</button>
+                        <button class="tab-btn" onclick="showMainFeature('notes')">Notes</button>
+                        <button class="tab-btn" onclick="showMainFeature('history')">History</button>
+                    </div>
+                </div>
+                
+                <div class="workspace-content">
+                    <!-- Weather Content -->
+                    <div id="weather-content" class="content-panel active">
+                        <div class="weather-section">
+                            <div class="input-group">
+                                <label for="citySelect">Select City:</label>
+                                <select id="citySelect">
+                                    <option value="london">London, UK</option>
+                                    <option value="newyork">New York, USA</option>
+                                    <option value="tokyo">Tokyo, Japan</option>
+                                    <option value="sydney">Sydney, Australia</option>
+                                    <option value="cairo">Cairo, Egypt</option>
+                                </select>
+                                <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
+                            </div>
+                            
+                            <div id="weatherResult" class="result-box"></div>
+                        </div>
                     </div>
                     
-                    <div class="feature-card" onclick="window.location.href='notes.html'">
-                        <div class="feature-icon">📝</div>
-                        <h3>Notes</h3>
-                        <p>Send and retrieve your notes</p>
-                        <button class="feature-btn">Open</button>
+                    <!-- Notes Content -->
+                    <div id="notes-content" class="content-panel">
+                        <div class="notes-section">
+                            <div class="note-input-section">
+                                <h3>Send a Note</h3>
+                                <div class="input-group">
+                                    <label for="noteInput">Enter your note:</label>
+                                    <textarea id="noteInput" placeholder="Type your note here..." rows="3"></textarea>
+                                    <button id="noteBtn" onclick="sendNote()">Send Note</button>
+                                </div>
+                            </div>
+                            
+                            <div class="note-retrieve-section">
+                                <h3>Get Notes</h3>
+                                <div class="input-group">
+                                    <button id="getNotesBtn" onclick="getNotes()">Get Last 5 Notes</button>
+                                </div>
+                            </div>
+                            
+                            <div id="noteStatus" class="result-box"></div>
+                        </div>
                     </div>
                     
-                    <div class="feature-card" onclick="window.location.href='history.html'">
-                        <div class="feature-icon">📅</div>
-                        <h3>Christian History</h3>
-                        <p>Discover daily facts about Christian martyrs</p>
-                        <button class="feature-btn">Open</button>
+                    <!-- History Content -->
+                    <div id="history-content" class="content-panel">
+                        <div class="history-section">
+                            <div class="input-group">
+                                <h3>Today in Christian History</h3>
+                                <p>Click the button below to discover what happened on this day in Christian history.</p>
+                                <button id="button3Btn" onclick="runButton3()">Get Today's Fact</button>
+                            </div>
+                            
+                            <div id="button3Result" class="result-box"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Other Uses Container -->
-            <div class="other-container">
-                <h2>Other Uses</h2>
-                <div class="other-grid">
-                    <div class="other-card">
-                        <div class="other-icon">⚙️</div>
-                        <h3>Utilities</h3>
-                        <p>Additional tools and utilities</p>
-                        <button class="other-btn">Coming Soon</button>
+            <div class="workspace-container">
+                <div class="workspace-header">
+                    <h2>Other Uses</h2>
+                    <div class="toolbar">
+                        <button class="tab-btn active" onclick="showOtherFeature('utilities')">Utilities</button>
+                        <button class="tab-btn" onclick="showOtherFeature('analytics')">Analytics</button>
+                        <button class="tab-btn" onclick="showOtherFeature('settings')">Settings</button>
+                    </div>
+                </div>
+                
+                <div class="workspace-content">
+                    <!-- Utilities Content -->
+                    <div id="utilities-content" class="content-panel active">
+                        <div class="utilities-section">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">⚙️</div>
+                                <h3>Utilities</h3>
+                                <p>Additional tools and utilities will be available here.</p>
+                                <p>This section is ready for future development.</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="other-card">
-                        <div class="other-icon">📊</div>
-                        <h3>Analytics</h3>
-                        <p>Data analysis and reporting</p>
-                        <button class="other-btn">Coming Soon</button>
+                    <!-- Analytics Content -->
+                    <div id="analytics-content" class="content-panel">
+                        <div class="analytics-section">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">📊</div>
+                                <h3>Analytics</h3>
+                                <p>Data analysis and reporting features coming soon.</p>
+                                <p>This section is ready for future development.</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="other-card">
-                        <div class="other-icon">🔧</div>
-                        <h3>Settings</h3>
-                        <p>Configure your preferences</p>
-                        <button class="other-btn">Coming Soon</button>
+                    <!-- Settings Content -->
+                    <div id="settings-content" class="content-panel">
+                        <div class="settings-section">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">🔧</div>
+                                <h3>Settings</h3>
+                                <p>Configure your preferences and settings here.</p>
+                                <p>This section is ready for future development.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,5 +138,8 @@
             <p>&copy; 2026 My Control Panel</p>
         </footer>
     </div>
+    
+    <!-- Link to JavaScript file with cache-busting -->
+    <script src="script.js?t=202607061128"></script>
 </body>
 </html>

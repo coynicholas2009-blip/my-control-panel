@@ -648,6 +648,51 @@ function runButton3() {
     button3Result.className = 'success';
 }
 
+// Tab switching functions for main features
+function showMainFeature(feature) {
+    // Hide all main feature content panels
+    document.getElementById('weather-content').classList.remove('active');
+    document.getElementById('notes-content').classList.remove('active');
+    document.getElementById('history-content').classList.remove('active');
+    
+    // Remove active class from all main feature tabs
+    const mainTabs = document.querySelectorAll('.workspace-container:first-child .tab-btn');
+    mainTabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Show selected content and activate tab
+    document.getElementById(feature + '-content').classList.add('active');
+    
+    // Find and activate the clicked tab
+    mainTabs.forEach(tab => {
+        if (tab.textContent.toLowerCase() === feature || 
+            (feature === 'history' && tab.textContent === 'History')) {
+            tab.classList.add('active');
+        }
+    });
+}
+
+// Tab switching functions for other uses
+function showOtherFeature(feature) {
+    // Hide all other uses content panels
+    document.getElementById('utilities-content').classList.remove('active');
+    document.getElementById('analytics-content').classList.remove('active');
+    document.getElementById('settings-content').classList.remove('active');
+    
+    // Remove active class from all other uses tabs
+    const otherTabs = document.querySelectorAll('.workspace-container:last-child .tab-btn');
+    otherTabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Show selected content and activate tab
+    document.getElementById(feature + '-content').classList.add('active');
+    
+    // Find and activate the clicked tab
+    otherTabs.forEach(tab => {
+        if (tab.textContent.toLowerCase() === feature) {
+            tab.classList.add('active');
+        }
+    });
+}
+
 // Add event listeners when page loads
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Control Panel loaded successfully');
