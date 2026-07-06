@@ -1,0 +1,141 @@
+/* Global styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container - centers content and provides padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main title styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* Card styling - each section is a card */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card heading styling */
+.card h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Card description paragraph */
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Form elements styling */
+select, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect for form elements */
+select:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Active effect for buttons */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Result divs styling - where output will appear */
+#weatherResult, #noteStatus, #button3Result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    min-height: 50px;
+    border-left: 4px solid #3498db;
+}
+
+/* Success message styling */
+.success {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+/* Error message styling */
+.error {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .card h2 {
+        font-size: 1.5em;
+    }
+}
