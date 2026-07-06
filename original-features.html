@@ -13,34 +13,47 @@
                 <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
                 <h1>⚡ Original Tools</h1>
             </div>
-            <p>Your original three-button layout with full functionality</p>
+            <p>Your original features with full functionality</p>
         </header>
         
         <main>
+            <!-- Weather Section -->
             <div class="feature-container">
-                <h2>Original Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-card" onclick="window.location.href='weather.html'">
-                        <div class="feature-icon">🌤️</div>
-                        <h3>Weather</h3>
-                        <p>Check weather for cities around the world</p>
-                        <button class="feature-btn">Go to Weather</button>
-                    </div>
-                    
-                    <div class="feature-card" onclick="window.location.href='getnotes.html'">
-                        <div class="feature-icon">📋</div>
-                        <h3>Get Notes</h3>
-                        <p>Retrieve your notes from the database</p>
-                        <button class="feature-btn">Go to Get Notes</button>
-                    </div>
-                    
-                    <div class="feature-card" onclick="window.location.href='history.html'">
-                        <div class="feature-icon">📅</div>
-                        <h3>Christian History</h3>
-                        <p>Discover daily facts about Christian martyrs</p>
-                        <button class="feature-btn">Go to History</button>
-                    </div>
+                <h2>🌤️ Weather</h2>
+                <div class="input-group">
+                    <label for="citySelect">Select City:</label>
+                    <select id="citySelect">
+                        <option value="london">London, UK</option>
+                        <option value="newyork">New York, USA</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="sydney">Sydney, Australia</option>
+                        <option value="cairo">Cairo, Egypt</option>
+                    </select>
+                    <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
                 </div>
+                
+                <div id="weatherResult" class="result-box"></div>
+            </div>
+            
+            <!-- Get Notes Section -->
+            <div class="feature-container">
+                <h2>📋 Get Notes</h2>
+                <div class="input-group">
+                    <button id="getNotesBtn" onclick="getNotes()">Get Last 5 Notes</button>
+                </div>
+                
+                <div id="noteStatus" class="result-box"></div>
+            </div>
+            
+            <!-- Christian History Section -->
+            <div class="feature-container">
+                <h2>📅 Christian History</h2>
+                <div class="input-group">
+                    <p>Click the button below to discover what happened on this day in Christian history.</p>
+                    <button id="button3Btn" onclick="runButton3()">Get Today's Fact</button>
+                </div>
+                
+                <div id="button3Result" class="result-box"></div>
             </div>
         </main>
         
@@ -48,5 +61,8 @@
             <p>&copy; 2026 My Control Panel</p>
         </footer>
     </div>
+    
+    <!-- Link to JavaScript file with cache-busting -->
+    <script src="script.js?t=202607061128"></script>
 </body>
 </html>
