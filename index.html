@@ -10,61 +10,33 @@
     <div class="container">
         <header>
             <h1>🎛️ My Control Panel</h1>
-            <p>All your features in one place</p>
+            <p>Choose a section to get started</p>
         </header>
         
         <main>
-            <!-- Unified Features Container -->
+            <!-- Existing Features Container -->
             <div class="feature-container">
-                <h2>All Features</h2>
-                
-                <!-- Weather Section -->
-                <div class="weather-section">
-                    <h3>🌤️ Weather</h3>
-                    <div class="input-group">
-                        <label for="citySelect">Select City:</label>
-                        <select id="citySelect">
-                            <option value="london">London, UK</option>
-                            <option value="newyork">New York, USA</option>
-                            <option value="tokyo">Tokyo, Japan</option>
-                            <option value="sydney">Sydney, Australia</option>
-                            <option value="cairo">Cairo, Egypt</option>
-                        </select>
-                        <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
-                    </div>
-                    
-                    <div id="weatherResult" class="result-box"></div>
-                </div>
-                
-                <!-- Send Notes Section -->
-                <div class="notes-section">
-                    <h3>📝 Send Notes</h3>
-                    <div class="input-group">
-                        <label for="noteInput">Enter your note:</label>
-                        <textarea id="noteInput" placeholder="Type your note here..." rows="3"></textarea>
-                        <button id="noteBtn" onclick="sendNote()">Send Note</button>
+                <h2>Existing Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card" onclick="window.location.href='existing-features.html'">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Current Tools</h3>
+                        <p>Access all your existing features and tools</p>
+                        <button class="feature-btn">Go to Existing Features</button>
                     </div>
                 </div>
-                
-                <!-- Get Notes Section -->
-                <div class="notes-section">
-                    <h3>📋 Get Notes</h3>
-                    <div class="input-group">
-                        <button id="getNotesBtn" onclick="getNotes()">Get Last 5 Notes</button>
+            </div>
+            
+            <!-- Experiment Container -->
+            <div class="feature-container">
+                <h2>Experimentation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card" onclick="window.location.href='experiment.html'">
+                        <div class="feature-icon">🧪</div>
+                        <h3>Lab Space</h3>
+                        <p>Experiment with new features and ideas</p>
+                        <button class="feature-btn">Go to Experiment</button>
                     </div>
-                    
-                    <div id="noteStatus" class="result-box"></div>
-                </div>
-                
-                <!-- Christian History Section -->
-                <div class="history-section">
-                    <h3>📅 Christian History</h3>
-                    <div class="input-group">
-                        <p>Click the button below to discover what happened on this day in Christian history.</p>
-                        <button id="button3Btn" onclick="runButton3()">Get Today's Fact</button>
-                    </div>
-                    
-                    <div id="button3Result" class="result-box"></div>
                 </div>
             </div>
         </main>
@@ -73,8 +45,5 @@
             <p>&copy; 2026 My Control Panel</p>
         </footer>
     </div>
-    
-    <!-- Link to JavaScript file with cache-busting -->
-    <script src="script.js?t=202607061128"></script>
 </body>
 </html>
