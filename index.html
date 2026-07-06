@@ -10,54 +10,61 @@
     <div class="container">
         <header>
             <h1>🎛️ My Control Panel</h1>
-            <p>Choose a section to get started</p>
+            <p>All your features in one place</p>
         </header>
         
         <main>
-            <!-- All Current Buttons Container -->
+            <!-- Unified Features Container -->
             <div class="feature-container">
                 <h2>All Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-card" onclick="window.location.href='weather.html'">
-                        <div class="feature-icon">🌤️</div>
-                        <h3>Weather</h3>
-                        <p>Check weather for cities around the world</p>
-                        <button class="feature-btn">Go to Weather</button>
+                
+                <!-- Weather Section -->
+                <div class="weather-section">
+                    <h3>🌤️ Weather</h3>
+                    <div class="input-group">
+                        <label for="citySelect">Select City:</label>
+                        <select id="citySelect">
+                            <option value="london">London, UK</option>
+                            <option value="newyork">New York, USA</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="sydney">Sydney, Australia</option>
+                            <option value="cairo">Cairo, Egypt</option>
+                        </select>
+                        <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
                     </div>
                     
-                    <div class="feature-card" onclick="window.location.href='notes.html'">
-                        <div class="feature-icon">📝</div>
-                        <h3>Send Notes</h3>
-                        <p>Send your notes to the database</p>
-                        <button class="feature-btn">Go to Send Notes</button>
-                    </div>
-                    
-                    <div class="feature-card" onclick="window.location.href='getnotes.html'">
-                        <div class="feature-icon">📋</div>
-                        <h3>Get Notes</h3>
-                        <p>Retrieve your notes from the database</p>
-                        <button class="feature-btn">Go to Get Notes</button>
-                    </div>
-                    
-                    <div class="feature-card" onclick="window.location.href='history.html'">
-                        <div class="feature-icon">📅</div>
-                        <h3>Christian History</h3>
-                        <p>Discover daily facts about Christian martyrs</p>
-                        <button class="feature-btn">Go to History</button>
+                    <div id="weatherResult" class="result-box"></div>
+                </div>
+                
+                <!-- Send Notes Section -->
+                <div class="notes-section">
+                    <h3>📝 Send Notes</h3>
+                    <div class="input-group">
+                        <label for="noteInput">Enter your note:</label>
+                        <textarea id="noteInput" placeholder="Type your note here..." rows="3"></textarea>
+                        <button id="noteBtn" onclick="sendNote()">Send Note</button>
                     </div>
                 </div>
-            </div>
-            
-            <!-- New Container with Weather & Get Notes Page -->
-            <div class="feature-container">
-                <h2>Quick Access</h2>
-                <div class="feature-grid">
-                    <div class="feature-card" onclick="window.location.href='weather-notes.html'">
-                        <div class="feature-icon">🌤️�</div>
-                        <h3>Weather & Get Notes</h3>
-                        <p>Weather and get notes in one place</p>
-                        <button class="feature-btn">Go to Weather & Get Notes</button>
+                
+                <!-- Get Notes Section -->
+                <div class="notes-section">
+                    <h3>📋 Get Notes</h3>
+                    <div class="input-group">
+                        <button id="getNotesBtn" onclick="getNotes()">Get Last 5 Notes</button>
                     </div>
+                    
+                    <div id="noteStatus" class="result-box"></div>
+                </div>
+                
+                <!-- Christian History Section -->
+                <div class="history-section">
+                    <h3>📅 Christian History</h3>
+                    <div class="input-group">
+                        <p>Click the button below to discover what happened on this day in Christian history.</p>
+                        <button id="button3Btn" onclick="runButton3()">Get Today's Fact</button>
+                    </div>
+                    
+                    <div id="button3Result" class="result-box"></div>
                 </div>
             </div>
         </main>
@@ -66,5 +73,8 @@
             <p>&copy; 2026 My Control Panel</p>
         </footer>
     </div>
+    
+    <!-- Link to JavaScript file with cache-busting -->
+    <script src="script.js?t=202607061128"></script>
 </body>
 </html>
