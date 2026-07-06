@@ -3,71 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <title>My Control Panel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Main container for the control panel -->
     <div class="container">
-        <h1>My Control Panel</h1>
+        <header>
+            <h1>🎛️ My Control Panel</h1>
+            <p>Choose a section to get started</p>
+        </header>
         
-        <!-- Card 1: Local Weather -->
-        <div class="card">
-            <h2>Local Weather</h2>
-            <p>Select a city and get weather information</p>
-            
-            <!-- City selection dropdown -->
-            <select id="citySelect">
-                <option value="london">London</option>
-                <option value="newyork">New York</option>
-                <option value="tokyo">Tokyo</option>
-                <option value="sydney">Sydney</option>
-                <option value="cairo">Cairo</option>
-            </select>
-            
-            <!-- Button to trigger weather fetch -->
-            <button id="weatherBtn" onclick="getWeather()">Get Weather</button>
-            
-            <!-- Result display area -->
-            <div id="weatherResult"></div>
-        </div>
+        <main>
+            <div class="nav-grid">
+                <div class="nav-card" onclick="window.location.href='weather.html'">
+                    <div class="nav-icon">🌤️</div>
+                    <h2>Weather</h2>
+                    <p>Check weather for cities around the world</p>
+                    <button class="nav-btn">Go to Weather</button>
+                </div>
+                
+                <div class="nav-card" onclick="window.location.href='notes.html'">
+                    <div class="nav-icon">📝</div>
+                    <h2>Notes</h2>
+                    <p>Send and retrieve your notes</p>
+                    <button class="nav-btn">Go to Notes</button>
+                </div>
+                
+                <div class="nav-card" onclick="window.location.href='history.html'">
+                    <div class="nav-icon">📅</div>
+                    <h2>Christian History</h2>
+                    <p>Discover daily facts about Christian martyrs</p>
+                    <button class="nav-btn">Go to History</button>
+                </div>
+            </div>
+        </main>
         
-        <!-- Card 2: Send a Note -->
-        <div class="card">
-            <h2>Send a Note</h2>
-            <p>Enter a note and submit it</p>
-            
-            <!-- Text input for note -->
-            <input type="text" id="noteInput" placeholder="Enter your note here...">
-            
-            <!-- Buttons for notes -->
-            <button id="noteBtn" onclick="sendNote()">Submit</button>
-            <button id="getNotesBtn" onclick="getNotes()">Get Notes</button>
-            
-            <!-- Status display area -->
-            <div id="noteStatus"></div>
-        </div>
-        
-        <!-- Card 3: Surprise Button -->
-        <div class="card">
-            <h2>Surprise Button</h2>
-            <p>Enter text and run the surprise function</p>
-            
-            <!-- Text input for surprise button -->
-            <input type="text" id="button3Input" placeholder="Enter text for surprise...">
-            
-            <!-- Button to run surprise function -->
-            <button id="button3Btn" onclick="runButton3()">Run</button>
-            
-            <!-- Result display area -->
-            <div id="button3Result"></div>
-        </div>
+        <footer>
+            <p>&copy; 2026 My Control Panel</p>
+        </footer>
     </div>
-    
-    <!-- Link to JavaScript file with cache-busting -->
-    <script src="script.js?t=202607061124"></script>
 </body>
 </html>

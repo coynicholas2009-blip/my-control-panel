@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian History - My Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-header">
+                <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+                <h1>📅 Christian History</h1>
+            </div>
+            <p>Discover daily facts about Christian martyrs</p>
+        </header>
+        
+        <main>
+            <div class="history-section">
+                <div class="input-group">
+                    <h3>Today in Christian History</h3>
+                    <p>Click the button below to discover what happened on this day in Christian history.</p>
+                    <button id="button3Btn" onclick="runButton3()">Get Today's Fact</button>
+                </div>
+                
+                <div id="button3Result" class="result-box"></div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Link to JavaScript file with cache-busting -->
+    <script src="script.js?t=202607061128"></script>
+</body>
+</html>

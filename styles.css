@@ -121,6 +121,146 @@ button:active {
     color: #721c24;
 }
 
+/* Navigation Styles */
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #5a6268;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.nav-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nav-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.nav-card h2 {
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.nav-card p {
+    color: #666;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+/* Section Styles for individual pages */
+.weather-section, .notes-section, .history-section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.weather-section h2, .notes-section h2, .history-section h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.weather-section h3, .notes-section h3, .history-section h3 {
+    color: #2c3e50;
+    margin: 20px 0 10px 0;
+    font-size: 1.3em;
+}
+
+.note-input-section, .note-retrieve-section {
+    margin-bottom: 25px;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Result box styling */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    min-height: 50px;
+    border-left: 4px solid #3498db;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .container {
@@ -137,5 +277,28 @@ button:active {
     
     .card h2 {
         font-size: 1.5em;
+    }
+    
+    .nav-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .nav-card {
+        padding: 20px;
+    }
+    
+    .nav-icon {
+        font-size: 36px;
+    }
+    
+    .nav-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .weather-section, .notes-section, .history-section {
+        padding: 20px;
     }
 }
