@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Notes - My Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-header">
+                <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+                <h1>📋 Get Notes</h1>
+            </div>
+            <p>Retrieve your notes from the database</p>
+        </header>
+        
+        <main>
+            <div class="notes-section">
+                <div class="note-retrieve-section">
+                    <h3>Get Notes</h3>
+                    <div class="input-group">
+                        <button id="getNotesBtn" onclick="getNotes()">Get Last 5 Notes</button>
+                    </div>
+                </div>
+                
+                <div id="noteStatus" class="result-box"></div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Link to JavaScript file with cache-busting -->
+    <script src="script.js?t=202607061128"></script>
+</body>
+</html>
