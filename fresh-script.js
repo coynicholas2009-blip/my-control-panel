@@ -1,4 +1,4 @@
-const UPDATE_BITCOIN_WEBHOOK = 'PASTE_YOUR_WEBHOOK_URL_HERE';
+const UPDATE_BITCOIN_WEBHOOK = 'https://tsc-jt.app.n8n.cloud/webhook/update bitcoin';
 
 async function updateBitcoinPrice() {
     const input = document.getElementById('updatePriceInput').value.trim();
