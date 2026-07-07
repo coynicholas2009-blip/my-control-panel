@@ -1,0 +1,12 @@
+{
+  "fresh-script.js": {
+    "mtime": 1783440720.2330592,
+    "ast_hash": "c52fe4ad40953bfeb5fcd2af0f3749d5",
+    "semantic_hash": "c52fe4ad40953bfeb5fcd2af0f3749d5"
+  },
+  "script.js": {
+    "mtime": 1783440720.2330592,
+    "ast_hash": "66f3d1a707824011f9a868f864f0c33f",
+    "semantic_hash": "66f3d1a707824011f9a868f864f0c33f"
+  }
+}

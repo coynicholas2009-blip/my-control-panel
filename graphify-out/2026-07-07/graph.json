@@ -1,0 +1,998 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "notes_feature_pages",
+        "label": "Pages participating in the Get Notes feature",
+        "nodes": [
+          "getnotes_page",
+          "notes_page",
+          "original_features_page",
+          "weather_notes_page",
+          "old_index_page"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "original-features.html"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "fresh-script.js",
+      "file_type": "code",
+      "source_file": "fresh-script.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "fresh_script",
+      "community": 1,
+      "norm_label": "fresh-script.js"
+    },
+    {
+      "label": "updateBitcoinPrice()",
+      "file_type": "code",
+      "source_file": "fresh-script.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "fresh_script_updatebitcoinprice",
+      "community": 1,
+      "norm_label": "updatebitcoinprice()"
+    },
+    {
+      "label": "getBitcoinPrices()",
+      "file_type": "code",
+      "source_file": "fresh-script.js",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "fresh_script_getbitcoinprices",
+      "community": 1,
+      "norm_label": "getbitcoinprices()"
+    },
+    {
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "script",
+      "community": 2,
+      "norm_label": "script.js"
+    },
+    {
+      "label": "getWeather()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "script_getweather",
+      "community": 6,
+      "norm_label": "getweather()"
+    },
+    {
+      "label": "sendWeatherToWebhook()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "script_sendweathertowebhook",
+      "community": 6,
+      "norm_label": "sendweathertowebhook()"
+    },
+    {
+      "label": "sendNote()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "script_sendnote",
+      "community": 3,
+      "norm_label": "sendnote()"
+    },
+    {
+      "label": "getNotes()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "script_getnotes",
+      "community": 5,
+      "norm_label": "getnotes()"
+    },
+    {
+      "label": "runButton3()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "script_runbutton3",
+      "community": 4,
+      "norm_label": "runbutton3()"
+    },
+    {
+      "label": "showMainFeature()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L652",
+      "_origin": "ast",
+      "id": "script_showmainfeature",
+      "community": 2,
+      "norm_label": "showmainfeature()"
+    },
+    {
+      "label": "showOtherFeature()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L675",
+      "_origin": "ast",
+      "id": "script_showotherfeature",
+      "community": 2,
+      "norm_label": "showotherfeature()"
+    },
+    {
+      "label": "Existing Features",
+      "file_type": "document",
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "existing_features_page",
+      "community": 0,
+      "norm_label": "existing features"
+    },
+    {
+      "label": "Experiment (Lab Space)",
+      "file_type": "document",
+      "source_file": "experiment.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "experiment_page",
+      "community": 0,
+      "norm_label": "experiment (lab space)"
+    },
+    {
+      "label": "Fresh Layout",
+      "file_type": "document",
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fresh_layout_page",
+      "community": 1,
+      "norm_label": "fresh layout"
+    },
+    {
+      "label": "Get Notes",
+      "file_type": "document",
+      "source_file": "getnotes.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "getnotes_page",
+      "community": 0,
+      "norm_label": "get notes"
+    },
+    {
+      "label": "Christian History",
+      "file_type": "document",
+      "source_file": "history.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "history_page",
+      "community": 0,
+      "norm_label": "christian history"
+    },
+    {
+      "label": "Home / My Control Panel",
+      "file_type": "document",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_page",
+      "community": 0,
+      "norm_label": "home / my control panel"
+    },
+    {
+      "label": "New Tools",
+      "file_type": "document",
+      "source_file": "new-page.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "new_page_page",
+      "community": 0,
+      "norm_label": "new tools"
+    },
+    {
+      "label": "Notes Tools (index page for notes)",
+      "file_type": "document",
+      "source_file": "notes-page.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "notes_page_page",
+      "community": 0,
+      "norm_label": "notes tools (index page for notes)"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "notes.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "notes_page",
+      "community": 0,
+      "norm_label": "notes"
+    },
+    {
+      "label": "Old Index",
+      "file_type": "document",
+      "source_file": "old-index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "old_index_page",
+      "community": 3,
+      "norm_label": "old index"
+    },
+    {
+      "label": "Original Features",
+      "file_type": "document",
+      "source_file": "original-features.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "original_features_page",
+      "community": 4,
+      "norm_label": "original features"
+    },
+    {
+      "label": "Weather & Notes",
+      "file_type": "document",
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "weather_notes_page",
+      "community": 5,
+      "norm_label": "weather & notes"
+    },
+    {
+      "label": "Weather",
+      "file_type": "document",
+      "source_file": "weather.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "weather_page",
+      "community": 0,
+      "norm_label": "weather"
+    },
+    {
+      "label": "styles.css",
+      "file_type": "code",
+      "source_file": "styles.css",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "styles_file",
+      "community": 0,
+      "norm_label": "styles.css"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fresh_layout_page",
+      "target": "fresh_script"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "fresh-script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "fresh_script",
+      "target": "fresh_script_getbitcoinprices"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "fresh-script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "fresh_script",
+      "target": "fresh_script_updatebitcoinprice"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fresh_layout_page",
+      "target": "fresh_script_updatebitcoinprice"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fresh_layout_page",
+      "target": "fresh_script_getbitcoinprices"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "getnotes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "getnotes_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "history.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "history_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "original-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "original_features_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "script",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "script",
+      "target": "script_getweather"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "script",
+      "target": "script_runbutton3"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "script",
+      "target": "script_sendnote"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_sendweathertowebhook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L652",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_showmainfeature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L675",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_showotherfeature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_notes_page",
+      "target": "script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_page",
+      "target": "script"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "script_getweather"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "original-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "original_features_page",
+      "target": "script_getweather"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "script_getweather",
+      "target": "script_sendweathertowebhook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_notes_page",
+      "target": "script_getweather"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_page",
+      "target": "script_getweather"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page",
+      "target": "script_sendnote"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "script_sendnote"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "getnotes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "getnotes_page",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "original-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "original_features_page",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_notes_page",
+      "target": "script_getnotes"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "history.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "history_page",
+      "target": "script_runbutton3"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "script_runbutton3"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "original-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "original_features_page",
+      "target": "script_runbutton3"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "getnotes_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "history_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "notes_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "existing-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "existing_features_page",
+      "target": "weather_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "experiment.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "experiment_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "experiment.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "experiment_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fresh_layout_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "fresh-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fresh_layout_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "getnotes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "getnotes_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "getnotes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "getnotes_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page_page",
+      "target": "getnotes_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "history.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "history_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "history.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "history_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "new-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "new_page_page",
+      "target": "history_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index_page",
+      "target": "original_features_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "new-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "new_page_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_notes_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_page",
+      "target": "index_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "new-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "new_page_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "new-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "new_page_page",
+      "target": "weather_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page_page",
+      "target": "notes_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes-page.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "notes_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "old-index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "old_index_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "original-features.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "original_features_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather-notes.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_notes_page",
+      "target": "styles_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "weather.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "weather_page",
+      "target": "styles_file"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "notes_feature_pages",
+      "label": "Pages participating in the Get Notes feature",
+      "nodes": [
+        "getnotes_page",
+        "notes_page",
+        "original_features_page",
+        "weather_notes_page",
+        "old_index_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "original-features.html"
+    }
+  ],
+  "built_at_commit": "19762f655992e39154000c837567abbae8d8cb1b"
+}

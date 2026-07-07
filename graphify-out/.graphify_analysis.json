@@ -1,0 +1,178 @@
+{
+  "communities": {
+    "0": [
+      "existing_features_page",
+      "experiment_page",
+      "getnotes_page",
+      "history_page",
+      "index_page",
+      "new_page_page",
+      "notes_page",
+      "notes_page_page",
+      "styles_file",
+      "weather_page"
+    ],
+    "1": [
+      "fresh_layout_page",
+      "fresh_script",
+      "fresh_script_getbitcoinprices",
+      "fresh_script_updatebitcoinprice"
+    ],
+    "2": [
+      "script",
+      "script_showmainfeature",
+      "script_showotherfeature"
+    ],
+    "3": [
+      "old_index_page",
+      "script_sendnote"
+    ],
+    "4": [
+      "original_features_page",
+      "script_runbutton3"
+    ],
+    "5": [
+      "script_getnotes",
+      "weather_notes_page"
+    ],
+    "6": [
+      "script_getweather",
+      "script_sendweathertowebhook"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5555555555555556,
+    "1": 0.8333333333333334,
+    "2": 0.6666666666666666,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "gods": [
+    {
+      "id": "index_page",
+      "label": "Home / My Control Panel",
+      "degree": 12
+    },
+    {
+      "id": "notes_page",
+      "label": "Notes",
+      "degree": 7
+    },
+    {
+      "id": "script_getweather",
+      "label": "getWeather()",
+      "degree": 6
+    },
+    {
+      "id": "script_getnotes",
+      "label": "getNotes()",
+      "degree": 6
+    },
+    {
+      "id": "existing_features_page",
+      "label": "Existing Features",
+      "degree": 6
+    },
+    {
+      "id": "getnotes_page",
+      "label": "Get Notes",
+      "degree": 6
+    },
+    {
+      "id": "history_page",
+      "label": "Christian History",
+      "degree": 6
+    },
+    {
+      "id": "old_index_page",
+      "label": "Old Index",
+      "degree": 6
+    },
+    {
+      "id": "original_features_page",
+      "label": "Original Features",
+      "degree": 6
+    },
+    {
+      "id": "weather_page",
+      "label": "Weather",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Fresh Layout",
+      "target": "updateBitcoinPrice()",
+      "source_files": [
+        "fresh-layout.html",
+        "fresh-script.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `updateBitcoinPrice()` unexpectedly reaches hub `Fresh Layout`"
+    },
+    {
+      "source": "Fresh Layout",
+      "target": "getBitcoinPrices()",
+      "source_files": [
+        "fresh-layout.html",
+        "fresh-script.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `getBitcoinPrices()` unexpectedly reaches hub `Fresh Layout`"
+    },
+    {
+      "source": "Old Index",
+      "target": "getWeather()",
+      "source_files": [
+        "old-index.html",
+        "script.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Original Features",
+      "target": "getWeather()",
+      "source_files": [
+        "original-features.html",
+        "script.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Weather & Notes",
+      "target": "getWeather()",
+      "source_files": [
+        "weather-notes.html",
+        "script.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Fresh Layout` connect `Bitcoin Price UI` to `Home Dashboard & Notes`?",
+      "why": "High betweenness centrality (0.230) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Home / My Control Panel` connect `Home Dashboard & Notes` to `Bitcoin Price UI`, `Original Feature Controls`, `Notes & Weather`?",
+      "why": "High betweenness centrality (0.190) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Notes` connect `Home Dashboard & Notes` to `Feature Display Script`, `Legacy Note Sender`, `Notes & Weather`?",
+      "why": "High betweenness centrality (0.064) - this node is a cross-community bridge."
+    }
+  ]
+}
