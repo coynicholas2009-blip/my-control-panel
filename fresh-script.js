@@ -1,3 +1,38 @@
+const UPDATE_BITCOIN_WEBHOOK = 'PASTE_YOUR_WEBHOOK_URL_HERE';
+
+async function updateBitcoinPrice() {
+    const input = document.getElementById('updatePriceInput').value.trim();
+    const resultBox = document.getElementById('updatePriceResult');
+    resultBox.style.display = 'block';
+
+    if (!input) {
+        resultBox.innerHTML = '<p style="color:red;">Please enter a price before submitting.</p>';
+        resultBox.className = 'result-box error';
+        return;
+    }
+
+    resultBox.innerHTML = 'Sending updated price...';
+    resultBox.className = 'result-box';
+
+    try {
+        const response = await fetch(UPDATE_BITCOIN_WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ updatedprice: input })
+        });
+
+        if (!response.ok) throw new Error(`Server responded with ${response.status}`);
+
+        resultBox.innerHTML = `<p style="color:green;">✅ Bitcoin price updated to <strong>$${Number(input).toLocaleString()}</strong> successfully!</p>`;
+        resultBox.className = 'result-box success';
+        document.getElementById('updatePriceInput').value = '';
+
+    } catch (error) {
+        resultBox.innerHTML = `<p style="color:red;">❌ Error updating price: ${error.message}</p>`;
+        resultBox.className = 'result-box error';
+    }
+}
+
 async function getBitcoinPrices() {
     const resultBox = document.getElementById('btn1Result');
     resultBox.innerHTML = 'Fetching live Bitcoin prices...';

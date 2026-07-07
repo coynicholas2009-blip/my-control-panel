@@ -25,6 +25,15 @@
                     <button id="btn1" onclick="getBitcoinPrices()">Submit</button>
                 </div>
                 <div id="btn1Result" class="result-box"></div>
+                
+                <hr style="margin: 25px 0; border: none; border-top: 1px solid #eee;">
+                
+                <div class="input-group">
+                    <label for="updatePriceInput" style="display:block; margin-bottom:8px; font-weight:bold; color:#2c3e50;">Update Bitcoin Price (USD):</label>
+                    <input type="text" id="updatePriceInput" placeholder="e.g. 105000" style="margin-bottom:10px;">
+                    <button id="updatePriceBtn" onclick="updateBitcoinPrice()">Update Price</button>
+                </div>
+                <div id="updatePriceResult" class="result-box" style="display:none;"></div>
             </div>
             
             <!-- Button 2 Section -->
